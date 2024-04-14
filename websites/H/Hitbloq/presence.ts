@@ -60,9 +60,12 @@ presence.on("UpdateData", async () => {
 				},
 			];
 			if (cover) {
-				presenceData.largeImageKey = document.querySelector<HTMLMetaElement>(
+				const poolCover = document.querySelector<HTMLMetaElement>(
 					"[property='og:image']"
 				).content;
+				presenceData.largeImageKey = poolCover.startsWith("/static/hashlists/")
+					? `https://hitbloq.com${poolCover}`
+					: poolCover;
 			}
 			break;
 		}
