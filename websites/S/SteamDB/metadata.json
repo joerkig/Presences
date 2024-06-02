@@ -22,7 +22,7 @@
 		"steamdb.info",
 		"steamstat.us"
 	],
-	"version": "1.1.10",
+	"version": "1.1.11",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/S/SteamDB/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/S/SteamDB/assets/thumbnail.png",
 	"color": "#3871C8",
@@ -45,16 +45,6 @@
 			"title": "Show Buttons",
 			"icon": "fas fa-compress-arrows-alt",
 			"value": true
-		},
-		{
-			"id": "accountValue",
-			"title": "Account Value",
-			"icon": "fas fa-wallet",
-			"value": 0,
-			"values": [
-				"lowest",
-				"today"
-			]
 		}
 	]
 }

@@ -16,9 +16,8 @@ const presence = new Presence({
 
 presence.on("UpdateData", async () => {
 	let searchText: HTMLInputElement, h1Title: Element, h2Title: Element;
-	const [time, accountValue, buttons] = await Promise.all([
+	const [time, buttons] = await Promise.all([
 			presence.getSetting<boolean>("time"),
-			presence.getSetting<number>("accountValue"),
 			presence.getSetting<boolean>("buttons"),
 		]),
 		tagSelected = document.querySelector<HTMLSelectElement>("#js-tag-select"),
@@ -101,23 +100,10 @@ presence.on("UpdateData", async () => {
 							presenceData.state = "Selecting User";
 						} else {
 							presenceData.details = "Viewing Calculator";
-							if (accountValue === 0) {
-								presenceData.state = `${
-									document.querySelector(".player-name")?.textContent
-								} (${
-									Array.from(
-										document.querySelector(".number-price").childNodes
-									).find(node => node.nodeName === "#text").textContent
-								})`;
-							} else if (accountValue === 1) {
-								presenceData.state = `${
-									document.querySelector(".player-name")?.textContent
-								} (${
-									Array.from(
-										document.querySelector(".number-price-lowest").childNodes
-									).find(node => node.nodeName === "#text").textContent
-								})`;
-							}
+							presenceData.state = `${
+								document.querySelector(".player-name")?.textContent
+							}`;
+
 							presenceData.buttons = [
 								{
 									label: "View Page",
