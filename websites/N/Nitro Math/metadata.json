@@ -1,43 +1,38 @@
 {
-	"$schema": "https://schemas.premid.app/metadata/1.12",
-	"apiVersion": 1,
-	"author": {
-		"name": "theLMGN",
-		"id": "158311402677731328"
-	},
-	"contributors": [
-		{
-			"name": "joerkig",
-			"id": "205984221859151873"
-		}
-	],
-	"service": "Nitro Math",
-	"description": {
-		"en": "Join your friends in this high speed math game, while earning cars and loot, progressing through Seasons, setting high scores and much more!"
-	},
-	"url": [
-		"nitromath.com",
-		"www.nitromath.com"
-	],
-	"version": "1.0.0",
-	"logo": "https://i.imgur.com/EKOASrE.png",
-	"thumbnail": "https://i.imgur.com/xghL0xm.png",
-	"color": "#D62F3A",
-	"category": "games",
-	"tags": [
-		"math",
-		"games",
-		"gaming",
-		"racing",
-		"race",
-		"educational"
-	],
-	"settings": [
-		{
-			"id": "showCar",
-			"title": "Show Car",
-			"icon": "fas fa-car-mirrors",
-			"value": true
-		}
-	]
+  "$schema": "https://schemas.premid.app/metadata/1.12",
+  "apiVersion": 1,
+  "author": {
+    "name": "joerkig",
+    "id": "205984221859151873"
+
+  },
+  "service": "Nitro Math",
+  "description": {
+    "en": "Join your friends in this high speed math game, while earning cars and loot, progressing through Seasons, setting high scores and much more!"
+  },
+  "url": [
+    "nitromath.com",
+    "www.nitromath.com"
+  ],
+  "version": "1.0.0",
+  "logo": "https://i.imgur.com/EKOASrE.png",
+  "thumbnail": "https://i.imgur.com/xghL0xm.png",
+  "color": "#D62F3A",
+  "category": "games",
+  "tags": [
+    "math",
+    "games",
+    "gaming",
+    "racing",
+    "race",
+    "educational"
+  ],
+  "settings": [
+    {
+      "id": "showCar",
+      "title": "Show Car",
+      "icon": "fas fa-car-mirrors",
+      "value": true
+    }
+  ]
 }
